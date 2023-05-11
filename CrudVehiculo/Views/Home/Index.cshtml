@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Vehiculos";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Información de Vehículos</h1>
+    <p>busca, Agrega, Edita o Elimina cualquier vehículo</p>
+    <!-- <img src="..." class="img-fluid" alt="Responsive image"> -->
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Vehiculos
+    </div>
+    <div class="card-body">
+        <table id="tablaVehiculos" class="stipe" style="width:100%">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Marca</th>
+                    <th style="text-align: center;">Modelo</th>
+                    <th style="text-align: center;">Color</th>
+                    <th style="text-align: center;">Patente</th>
+                    <th style="text-align: center;">Año</th>
+                    <th style="text-align: center;">Cilindrada</th>
+                    <th style="text-align: center;">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;"> Test </td>
+                    <td style="text-align: center;"> Test </td>
+                    <td style="text-align: center;"> Test </td>
+                    <td style="text-align: center;"> Test </td>
+                    <td style="text-align: center;"> Test </td>
+                    <td style="text-align: center;"> Test </td>
+                    <td style="text-align: center;"> 
+                        <button type="button" class="btn btn-primary btn-block" >
+                            Agregar
+                        </button>
+                        <button type="button" class="btn btn-warning">
+                            Editar
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Estilos{
+    <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet" />
+}
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $('#tablaVehiculos').DataTable({
+
+              
+                language: table_espanol
+            });
+
+
+        });
+
+        var table_espanol = {
+            "decimal": "",
+            "emptyTable": "No hay información",
+            "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+            "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+            "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+            "infoPostFix": "",
+            "thousands": ",",
+            "lengthMenu": "Mostrar _MENU_ Entradas",
+            "loadingRecords": "Cargando...",
+            "processing": "Procesando...",
+            "search": "Buscar:",
+            "zeroRecords": "Sin resultados encontrados",
+            "paginate": {
+                "first": "Primero",
+                "last": "Ultimo",
+                "next": "Siguiente",
+                "previous": "Anterior"
+            }
+        }
+
+    </script>
+
+}
+

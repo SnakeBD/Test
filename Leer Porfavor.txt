@@ -1,0 +1,9 @@
+Debido a que actualize Visual Studio de 19 a 2022 para poder trabajar con Net Core 6
+no pude conectarme a la base de datos de MS Access porque mi versión es de 32 bits y
+tuve tiempo para poder cambiarlo y hacer pruebas (esto me llevo un poco de tiempo poder
+descubrirlo).
+
+esto llevo, por mi falta de conocimiento y expereincia  asp.net, a no poder trabajar con
+el controlador sin tener datos para poder hacer las pruebas.
+
+lamento mucho las molestias y gracias por su tiempo
